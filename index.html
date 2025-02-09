@@ -4,6 +4,15 @@
         <meta charset="UTF-8">
         <title>My Home Page</title>
         <link rel="stylesheet" href="style.css" />
+        <script>
+            window.onload = function() {
+                let visitorName = prompt("Please enter your name:", "Guest");
+                if (visitorName) {
+                    alert("Welcome to my site, " + visitorName + "!");
+                    document.getElementById("header-title").innerText = "Welcome, " + visitorName + "!";
+                }
+            };
+        </script>
     </head>
     <body>
        <header>
